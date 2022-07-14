@@ -52,6 +52,7 @@ BOARD_MKBOOTIMG_ARGS += --dt $(TARGET_PREBUILT_DTB)
 # It's not needed for booting TWRP, but it should be added
 TARGET_BOARD_PLATFORM := msm8916
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno306
+BOARD_USES_QCOM_HARDWARE := true
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := pd1510
@@ -100,4 +101,5 @@ TW_EXCLUDE_ENCRYPTED_BACKUPS := true
 
 # Encryption support
 TW_INCLUDE_CRYPTO := true
+TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
